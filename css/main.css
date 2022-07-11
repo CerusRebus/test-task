@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+}
+.header_container {
+  max-width: 1200px;
+  min-height: 80px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .header_container {
+    min-height: 90px;
+  }
+}
+.header_container .header_link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000000;
+  font-family: Roboto, sans-serif;
+}
+@media screen and (min-width: 425px) {
+  .header_container .header_link {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header_container .header_link {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header_container .header_link {
+    font-weight: 600;
+    font-size: 3rem;
+  }
+}
+.header_container .menu_list {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.header_container .menu_list > li {
+  position: relative;
+  margin: 0 0 0 20px;
+  display: flex;
+  justify-content: center;
+}
+.header_container .menu_link {
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.header_container .menu_link:hover {
+  text-decoration: underline;
+}
+
+/*-media query-*/
+@media screen and (min-width: 767px) {
+  .menu_list .menu_link {
+    font-size: 2rem;
+  }
+}
+.menu_icon {
+  width: 30px;
+  height: 20px;
+  display: block;
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.menu_icon > span, .menu_icon::before, .menu_icon::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  transition: all 0.3s ease 0s;
+  background-color: #000000;
+}
+.menu_icon > span {
+  top: 50%;
+  transform: scale(1) translate(0px, -50%);
+}
+.menu_icon::before, .menu_icon::after {
+  content: "";
+}
+.menu_icon::before {
+  top: 0;
+}
+.menu_icon::after {
+  bottom: 0;
+}
+.menu_icon._active span {
+  transform: scale(0) translate(0px, -50%);
+}
+.menu_icon._active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+.menu_icon._active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+.menu_body {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 20%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 40px 30px 30px 30px;
+  overflow: auto;
+  transition: left 0.5s ease 0s;
+  z-index: 10;
+}
+.menu_body._active {
+  left: 0;
+}
+.menu_body .menu_list > li {
+  flex-wrap: wrap;
+  margin: 0 0 10px 0;
+}
+.menu_body .menu_list > li:last-child {
+  margin-bottom: 0;
+}
+.menu_body .menu_list > li._active .menu_sub-list {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .menu_body {
+    width: 30%;
+  }
+}
+/*-body variant -*/
+body._pc .menu_list > li:hover .menu_sub-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+  pointer-events: all;
+}
+
+.menu_arrow {
+  display: none;
+}
+
+body._touch .menu_list > li._active .menu_sub-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+  pointer-events: all;
+}
+body._touch .menu_arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #ffffff;
+  margin: 0 0 0 5px;
+  transition: transform 0.3s ease 0s;
+}
+body._touch .menu_list > li._active .menu_arrow {
+  transform: rotate(-180deg);
+}
+body._touch li {
+  display: flex;
+  align-items: center;
+}
+body._touch li .menu_link {
+  flex: 1 1 auto;
+}
+
+body._lock {
+  overflow: hidden;
+  opacity: 0.9;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: row;
+}
+.welcome .welcome-block {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px;
+  background-color: #f2f2f2;
+  order: 1;
+}
+.welcome .welcome-block .first-title {
+  font-family: Roboto, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 0;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.welcome .welcome-block .welcome-title {
+  font-family: "Dancing Script";
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 1.1;
+  word-wrap: break-word;
+  position: relative;
+}
+.welcome .welcome-block .welcome-text {
+  font-family: Roboto, sans-serif;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1.6;
+  word-wrap: break-word;
+  flex-shrink: 0;
+  color: #111111;
+}
+.welcome .welcome-block .welcome-connect {
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 10px 30px;
+  margin: 31px auto 0 0;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000000;
+  background-color: #f2b39a;
+}
+
+.welcome-image {
+  overflow: hidden;
+}
+.welcome-image .test-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1199px) {
+  .welcome-title {
+    font-size: 6.125rem;
+  }
+
+  .welcome-text {
+    width: auto;
+    margin-right: 57px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .welcome-block {
+    padding: 50px 30px;
+  }
+
+  .welcome-title {
+    font-size: 3.75rem;
+  }
+
+  .welcome-text {
+    font-size: 1.25rem;
+    margin-right: 31px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .welcome {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcome-block {
+    padding-left: 30px;
+  }
+
+  .welcome-title {
+    font-size: 6rem;
+  }
+
+  .welcome-text {
+    margin-right: 0;
+  }
+
+  .welcome-image {
+    order: 2;
+  }
+  .welcome-image .test-image {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .welcome {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcome-title {
+    font-size: 4.5rem;
+  }
+
+  .welcome-text {
+    margin-right: auto;
+  }
+
+  .welcome-image {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+.item {
+  width: 322px;
+  height: 351px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  max-width: 100%;
+  text-align: center;
+  line-height: 1.6;
+  background-color: #fbd2c0;
+}
+.item .gallery-title {
+  font-family: "Dancing Script";
+  font-weight: 700;
+  margin: 25px auto 0;
+  padding: 0;
+  word-wrap: break-word;
+  flex-shrink: 0;
+  line-height: 1.2;
+  font-size: 2.25rem;
+  text-align: center;
+}
+.item .border {
+  display: inline-block;
+  height: 3px;
+  transform-origin: left center 0;
+  transform: rotate(360deg);
+  margin: 30px auto 0;
+  background-color: #000000;
+}
+.item .gallery-text {
+  font-family: Roboto, sans-serif;
+}
+
+.item-image .gallery-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1199px) {
+  .gallery {
+    min-height: 464px;
+  }
+
+  .gallery-title {
+    width: 185px;
+    margin: 24px 0 0 0;
+  }
+
+  .item {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .border {
+    width: 45px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .gallery {
+    margin: auto;
+    min-height: 1342px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery-title {
+    width: 322px;
+    margin-top: 46px;
+  }
+
+  .item {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  .border {
+    width: 34px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gallery {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .gallery-title {
+    font-size: 1.5rem;
+    width: 512px;
+    margin-top: 25px;
+  }
+
+  .border {
+    width: 32px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .item {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .gallery-title {
+    width: 322px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .border {
+    width: 27px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .gallery {
+    width: 720px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
