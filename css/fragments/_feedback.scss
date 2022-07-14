@@ -1,0 +1,164 @@
+.feedback {
+  background-color: #FDFDFDFF;
+  width: 100%;
+  margin-top: 4rem;
+
+  &__container {
+    margin: 0 auto;
+  }
+
+  .feedback__title__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .feedback__title {
+      @include fontDancing;
+      text-align: center;
+      margin: 10px 0;
+    }
+  }
+
+  .feedback__row {
+    display: flex;
+    min-height: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+
+    .feedback__comment {
+      border: 15px solid transparent;
+      position: relative;
+
+      .feedback__circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: rgba(251, 210, 192, 0.6);
+        position: absolute;
+        top: -30px;
+        left: -10px;
+      }
+
+      .feedback__text {
+        font-family: Roboto, sans-serif;
+        line-height: 1.6;
+        font-weight: 400;
+        word-wrap: break-word;
+        z-index: 5;
+        position: relative;
+        text-align: left;
+      }
+    }
+  }
+}
+
+/*Media query*/
+
+@media screen and (min-width: 1200px) {
+  .feedback {
+    &__container {
+      width: 1140px;
+    }
+
+    .feedback__row {
+      margin: 30px auto 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .feedback {
+
+    &__container {
+      width: 940px;
+    }
+
+    &__title__container {
+      padding: 0 49px;
+
+      .feedback__title {
+      }
+    }
+
+    .feedback__row {
+      margin-top: 28px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .feedback {
+
+    &__container {
+      width: 720px;
+    }
+
+    &__title__container {
+      padding: 0 38px;
+
+      .feedback__title {
+      }
+    }
+
+    .feedback__row {
+      margin-top: 15px;
+      margin-bottom: 23px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .feedback {
+    &__container {
+      width: 540px;
+    }
+
+    &__title__container {
+      padding: 0 28px;
+
+      .feedback__title {
+      }
+    }
+
+    .feedback__row {
+      flex-flow: column wrap;
+      margin-bottom: 23px;
+
+      .feedback__comment {
+        border-left: 0 !important;
+        border-right: 0 !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .feedback {
+    &__container {
+      width: 340px;
+    }
+
+    &__title__container {
+      padding: 0 18px;
+
+      .feedback__title {
+      }
+    }
+
+    .feedback__row {
+      margin-top: 32px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feedback__title {
+    font-size: 2.25rem;
+  }
+  .feedback__row {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+

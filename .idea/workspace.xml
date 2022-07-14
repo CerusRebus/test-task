@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cae32cf9-9be6-4df7-a28c-6e71685730e5" name="Changes" comment="" />
+    <list default="true" id="cae32cf9-9be6-4df7-a28c-6e71685730e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/css/fragments/_feedback.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/fragments/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/fragments/_massages.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/fragments/_procedures.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/fragments/_products.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/fragments/_reservation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/fragments/_skin__care.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fragments/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/fragments/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fragments/_root.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/fragments/_root.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fragments/_welcome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/fragments/_welcome.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fragments/gallery.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fragments/gallery.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fragments/gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/fragments/_gallery.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/b1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products__image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/girlinawellnesscenter_10981.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/procedures__image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/welcome-image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/welcome__image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,29 +39,35 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Bn8wQmYyXu6CB2RbdjWgfUoP5v" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Admin/Desktop/STEP/HTML & CSS/Project/Other/burger-menu/script.js",
-    "list.type.of.created.stylesheet": "SCSS",
-    "settings.editor.selected.configurable": "watcher.settings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/STEP/JavaScript/Project/test-task&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\STEP\JavaScript\Project\test-task\css\fragments" />
+      <recent name="C:\Users\Admin\Desktop\STEP\JavaScript\Project\test-task\css" />
       <recent name="C:\Users\Admin\Desktop\STEP\JavaScript\Project\test-task\js" />
     </key>
   </component>
@@ -54,11 +83,43 @@
       <workItem from="1657532109289" duration="24000" />
       <workItem from="1657532228918" duration="504000" />
       <workItem from="1657532739329" duration="12082000" />
+      <workItem from="1657545704329" duration="327000" />
+      <workItem from="1657559162557" duration="10108000" />
+      <workItem from="1657607558899" duration="1000" />
+      <workItem from="1657613286413" duration="12064000" />
+      <workItem from="1657636215514" duration="3397000" />
+      <workItem from="1657641149716" duration="10684000" />
+      <workItem from="1657701792644" duration="7261000" />
+      <workItem from="1657716414633" duration="6256000" />
+      <workItem from="1657777429048" duration="3075000" />
     </task>
+    <task id="LOCAL-00001" summary="test task for company">
+      <created>1657545842425</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1657545842425</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test task for company" />
+    <option name="LAST_COMMIT_MESSAGE" value="test task for company" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

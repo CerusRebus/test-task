@@ -1,0 +1,232 @@
+.procedures {
+  background-image: url("../../images/procedures_image.jpg");
+  object-fit: cover;
+  display: block;
+  vertical-align: middle;
+  background-size: cover;
+
+  &__container {
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+
+    .procedures__image {
+      width: 100%;
+
+      .image {
+        width: 100%;
+        object-fit: cover;
+        vertical-align: bottom;
+      }
+    }
+
+    .procedures__text {
+      background-color: #000000;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      &__container {
+        border: 1px solid $white-color;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        .procedures__title {
+          font-size: 2.25rem;
+          @include fontDancing;
+          color: $white-color;
+          margin-bottom: 0;
+        }
+        .procedures__tap {
+          @include tap;
+          margin-top: 30px;
+          background-color: $white-color;
+        }
+        .procedures__p {
+          font-family: Roboto, sans-serif;
+          color: $white-color;
+          font-weight: 400;
+          line-height: 1.6;
+          word-wrap: break-word;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+/*Media query*/
+
+@media screen and (min-width: 1200px) {
+  .procedures {
+    &__container {
+      width: 1140px;
+      padding: 105px 0;
+
+      .procedures__image {
+        .image {
+          min-height: 601px;
+        }
+      }
+
+      .procedures__text {
+
+        &__container {
+          width: 471px;
+          min-height: 500px;
+          padding: 0 20px;
+          margin: 51px auto;
+
+          .procedures__title {
+            margin: 50px 0 0;
+          }
+          .procedures__tap {
+            width: 51px;
+          }
+          .procedures__p{
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .procedures {
+    &__container {
+      width: 940px;
+      padding-top: 90px;
+      padding-bottom: 70px;
+
+      .procedures__image {
+        .image {
+          min-height: 523px;
+        }
+      }
+
+      .procedures__text {
+
+        &__container {
+          width: 388px;
+          min-height: 426px;
+          padding: 0 24px 0 29px;
+          margin-top: 51px;
+          margin-bottom: 26px;
+
+          .procedures__title {
+            margin-top: 40px;
+          }
+          .procedures__tap {
+            width: 42px;
+          }
+          .procedures__p{
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .procedures {
+    &__container {
+      width: 720px;
+      padding-top: 60px;
+      padding-bottom: 12px;
+
+      .procedures__image {
+        .image {
+          min-height: 506px;
+        }
+      }
+
+      .procedures__text {
+
+        &__container {
+          width: 297px;
+          min-height: 431px;
+          padding: 0 13px;
+          margin-top: 38px;
+          margin-bottom: 38px;
+
+          .procedures__title {
+            margin-top: 45px;
+          }
+          .procedures__tap {
+            width: 32px;
+          }
+          .procedures__p{
+            margin-bottom: 45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .procedures {
+    &__container {
+      width: 540px;
+      padding-top: 66px;
+      padding-bottom: 66px;
+      flex-flow: column nowrap;
+
+      .procedures__image {
+        .image {
+          min-height: 601px;
+        }
+      }
+
+      .procedures__text {
+
+        &__container {
+          width: 468px;
+          min-height: 500px;
+          padding: 0 9px;
+          margin-top: 50px;
+          margin-bottom: 51px;
+
+          .procedures__title {
+            font-size: 1.5rem;
+            margin-top: 50px;
+          }
+          .procedures__tap {
+            width: 30px;
+          }
+          .procedures__p{
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .procedures {
+    &__container {
+      width: 340px;
+
+      .procedures__image {
+        .image {
+          min-height: 330px;
+        }
+      }
+
+      .procedures__text {
+
+        &__container {
+          padding: 0 17px;
+          width: 285px;
+          min-height: 521px;
+          margin-top: 51px;
+        }
+      }
+    }
+  }
+}
+

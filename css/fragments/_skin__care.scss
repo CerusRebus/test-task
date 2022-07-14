@@ -1,0 +1,300 @@
+.skin__care {
+  margin-top: 6rem;
+
+  &__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-clip: padding-box;
+    background-origin: padding-box;
+
+    .image {
+      width: 417px;
+      height: 519px;
+      object-fit: cover;
+      z-index: 10;
+    }
+
+    .skin__care__border {
+      position: absolute;
+      border: 5px solid $bgc-item;
+    }
+
+    .skin__care__background {
+      position: absolute;
+      background-color: $bgc-item;
+      opacity: 0.5;
+    }
+  }
+
+  .skin__care__text {
+
+    .skin__care__title {
+      @include fontDancing;
+    }
+
+    .skin__care__tap {
+      @include tap;
+    }
+
+    .skin__care__p {
+      color: $black-color;
+      font-family: Roboto, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      font-size: 1rem;
+      margin: 34px 0 0;
+      word-wrap: break-word;
+    }
+
+    .skin__care__link {
+      white-space: nowrap;
+      color: $bgc-item;
+      margin-top: 37px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skin__care {
+    width: 1140px;
+    min-height: 769px;
+    margin: 6rem auto 0;
+  }
+  .skin__care__border {
+    top: -35px;
+    margin-left: -70px;
+    height: 593px;
+    width: 394px;
+  }
+
+  .skin__care__background {
+    top: 50px;
+    margin-left: 100px;
+    height: 541px;
+    width: 462px;
+  }
+  .skin__care__text {
+    .skin__care__title {
+      font-size: 3.75rem;
+    }
+    margin: 65px 0 0;
+    padding: 0 51px 0 43px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .skin__care {
+    &__image {
+      .image {
+        width: 344px;
+        height: 519px;
+      }
+
+      .skin__care__border {
+        top: -35px;
+        margin-left: -70px;
+        height: 593px;
+        width: 325px;
+      }
+
+      .skin__care__background {
+        top: 50px;
+        margin-left: 100px;
+        height: 541px;
+        width: 381px;
+      }
+    }
+
+    &__text {
+      padding: 0 42px 0 35px;
+
+      .skin__care__title {
+        font-size: 3rem;
+      }
+
+      .skin__care__tap {
+        width: 45px;
+      }
+
+      .skin__care__link {
+        margin-right: 312px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .skin__care {
+    &__image {
+      min-height: 559px;
+
+      .image {
+        width: 296px;
+        height: 452px;
+      }
+
+      .skin__care__border {
+        top: -35px;
+        margin-left: -60px;
+        height: 530px;
+        width: 290px;
+      }
+
+      .skin__care__background {
+        top: 50px;
+        margin-left: 100px;
+        height: 471px;
+        width: 291px;
+      }
+    }
+
+    &__text {
+      padding: 0 32px 0 27px;
+
+      .skin__care__title {
+        font-size: 2.25rem;
+        margin-top: 55px;
+      }
+
+      .skin__care__tap {
+        width: 34px;
+      }
+
+      .skin__care__link {
+        margin-right: 239px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skin__care {
+    &__image {
+      min-height: 629px;
+
+      .image {
+        width: 366px;
+        height: 519px;
+      }
+
+      .skin__care__border {
+        top: -35px;
+        margin-left: -110px;
+        height: 593px;
+        width: 361px;
+      }
+
+      .skin__care__background {
+        top: 50px;
+        margin-left: 100px;
+        height: 541px;
+        width: 425px;
+      }
+    }
+
+    &__text {
+      width: 496px;
+      height: 513px;
+      padding: 0 24px 0 20px;
+
+      .skin__care__title {
+        font-size: 3.75rem;
+        margin-top: 58px;
+      }
+
+      .skin__care__tap {
+        width: 32px;
+      }
+
+      .skin__care__link {
+        margin-right: 179px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .skin__care {
+    &__image {
+      min-height: 535px;
+
+      .image {
+        width: 287px;
+        height: 415px;
+      }
+
+      .skin__care__border {
+        top: -35px;
+        margin-left: -110px;
+        height: 497px;
+        width: 247px;
+      }
+
+      .skin__care__background {
+        top: 50px;
+        margin-left: 100px;
+        width: 229px;
+        height: 445px;
+      }
+    }
+
+    &__text {
+      width: 340px;
+      height: 541px;
+      padding: 0 15px 0 13px;
+
+      .skin__care__title {
+        margin-top: 65px;
+      }
+
+      .skin__care__tap {
+        width: 27px;
+        display: block;
+      }
+
+      .skin__care__link {
+        margin-right: 113px;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .skin__care__tap {
+    width: 54px;
+  }
+}
+
+@media (min-width: 768px) {
+  .skin__care {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100%;
+    max-width: 100%;
+
+    &__image {
+      width: 50%;
+    }
+
+    &__text {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 340px) {
+  .skin__care__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    flex: 1;
+    max-width: 100%;
+  }
+}
+
+

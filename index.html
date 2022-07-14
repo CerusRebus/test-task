@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+    <link rel="stylesheet" type="text/css" href="css/fragments/_footer.scss"/>
+    <link rel="stylesheet" type="text/css" href="css/fragments/_procedures.scss"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,68 +11,206 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <header class="header">
-        <div class="header_container">
-        <a href="#" class="header_link">Салон красоты</a>
-            <div class="header_menu menu">
-                <div class="menu_icon">
-                    <span></span>
+<header class="header">
+    <div class="header__container">
+        <a href="#" class="header__link">Салон красоты</a>
+        <div class="header__menu menu">
+            <div class="menu__icon">
+                <span></span>
+            </div>
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li><a href="#" class="menu__link">Page 1</a></li>
+                    <li><a href="#" class="menu__link">Beauty Salon</a></li>
+                    <li><a href="#" class="menu__link">Page 2</a></li>
+                    <li><a href="#" class="menu__link">Page 3</a></li>
+                    <li><a href="#" class="menu__link">Page 4</a></li>
+                    <li><a href="#" class="menu__link">Page 5</a></li>
+                    <li><a href="#" class="menu__link">Page 6</a></li>
+                    <li><a href="#" class="menu__link">Page 7</a></li>
+                    <li><a href="#" class="menu__link">Page 8</a></li>
+                    <li><a href="#" class="menu__link">Page 9</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="welcome">
+        <div class="welcome__block">
+            <h5 class="first__title">студия красоты</h5>
+            <h1 class="welcome__title">Добро пожаловать</h1>
+            <p class="welcome__text">в Slow Beauty Eco Salon, салон органической красоты в Нью-Йорке</p>
+            <a href="#" class="welcome__connect">связаться с нами</a>
+        </div>
+        <div class="welcome__image">
+            <img src="images/welcome__image.jpg" class="image" alt="welcome-image">
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="item order__1">
+            <h3 class="gallery__title">Уникальное место</h3>
+            <span class="gallery__tap"></span>
+            <p class="gallery__text">Integer diam quam, ultrices non lobortis ut, ultricies at libero phasellus luctus</p>
+        </div>
+        <div class= "item item-image order__2">
+            <img src="images/item-1.jpg" class="gallery__image" alt="gallery-image">
+        </div>
+        <div class="item order__3" style="background-color: #000000;">
+            <h3 class="gallery__title" style="color: #FFFFFF;">Уход за телом</h3>
+            <span class="gallery__tap" style="background-color: #FFFFFF;"></span>
+            <p class="gallery__text" style="color: #FFFFFF;">Integer diam quam, ultrices non lobortis ut, ultricies at libero phasellus luctus</p>
+        </div>
+        <div class= "item item-image order__4"><img src="images/item-2.jpg" class="gallery__image" alt="gallery-image"></div>
+        <div class="item order__5" style="background-color: #FFFFFF;">
+            <h3 class="gallery__title">Специальные предложения</h3>
+            <span class="gallery__tap"></span>
+            <p class="gallery__text">Integer diam quam, ultrices non lobortis ut, ultricies at libero phasellus luctus</p>
+        </div>
+        <div class= "item item-image order__6"><img src="images/item-3.jpg" class="gallery__image" alt="gallery-image"></div>
+        <div class="item order__7">
+            <h3 class="gallery__title">Салон красоты</h3>
+            <span class="gallery__tap"></span>
+            <p class="gallery__text">Integer diam quam, ultrices non lobortis ut, ultricies at libero phasellus luctus</p>
+        </div>
+        <div class= "item item-image order__8"><img src="images/item-4.jpg" class="gallery__image" alt="gallery-image"></div>
+    </section>
+    <section class="skin__care">
+        <div class="skin__care__image">
+            <img src="images/skin__care__image.jpg" class="image" alt="skin__care__image">
+            <div class="skin__care__border"></div>
+            <div class="skin__care__background"></div>
+        </div>
+        <div class="skin__care__text">
+            <h1 class="skin__care__title">Продвинутый уход за кожей</h1>
+            <span class="skin__care__tap"></span>
+            <p class="skin__care__p">Наши высококвалифицированные терапевты проведут тщательный анализ потребностей
+                вашей кожи и составят для вас лучшую программу лечения.</p>
+            <a href="#" class="skin__care__link">learn more</a>
+        </div>
+    </section>
+    <section class="products">
+        <div class="products__image">
+            <img src="images/products__image.jpg" class="image" alt="products__image">
+        </div>
+        <div class="products__text">
+            <h1 class="products__title">Какие у вас есть продукты?</h1>
+            <span class="products__tap"></span>
+            <p class="products__p">Каждый ингредиент, который вы наносите на кожу, является информацией, каждый
+                ингредиент содержит сообщения, которые передаются каждой клетке вашей кожи.</p>
+            <a href="#" class="products__link">учить больше</a>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="feedback__container">
+            <div class="feedback__title__container">
+                <h2 class="feedback__title">Довольные клиенты. Это то, что она
+                    сказала....</h2>
+            </div>
+            <div class="feedback__row">
+                <div class="feedback__comment">
+                    <div class="feedback__circle"></div>
+                    <p class="feedback__text">
+                        Обнаружив, что у меня аллергия на мой предыдущий цвет волос и я только что забеременела, я была
+                        очень рада найти безопасную альтернативу Beauty Ecology Organic Salon! Я так благодарен, что
+                        больше
+                        не выхожу из салона с зудом
+                        и жжение кожи головы.</p>
                 </div>
-                <nav class="menu_body">
-                    <ul class="menu_list">
-                        <li><a href="#" class="menu_link">Page 1</a></li>
-                        <li><a href="#" class="menu_link">Beauty Salon</a></li>
-                        <li><a href="#" class="menu_link">Page 2</a></li>
-                        <li><a href="#" class="menu_link">Page 3</a></li>
-                        <li><a href="#" class="menu_link">Page 4</a></li>
-                        <li><a href="#" class="menu_link">Page 5</a></li>
-                        <li><a href="#" class="menu_link">Page 6</a></li>
-                        <li><a href="#" class="menu_link">Page 7</a></li>
-                        <li><a href="#" class="menu_link">Page 8</a></li>
-                        <li><a href="#" class="menu_link">Page 9</a></li>
-                    </ul>
-                </nav>
+                <div class="feedback__comment">
+                    <div class="feedback__circle"></div>
+                    <p class="feedback__text">
+                        I used to be in the hair industry, so you might guess that I’m a bit picky about who does my
+                        hair.
+                        Etiam quis lorem vel diam blandit porttitor. Aenean elementum pretium arcu eget convallis. Donec
+                        imperdiet purus vitae.</p>
+                </div>
+                <div class="feedback__comment">
+                    <div class="feedback__circle"></div>
+                    <p class="feedback__text">
+                        I absolutely love the organic skin care and hair care products that she has developed with her
+                        chemists. Etiam quis lorem vel diam blandit porttitor. Aenean elementum pretium arcu eget
+                        convallis.
+                        Donec imperdiet purus vitae
+                        est viverra tincidunt.</p>
+                </div>
             </div>
         </div>
-    </header>
-    <main>
-        <section class="welcome">
-            <div class="welcome-block">
-                <h5 class="first-title">студия красоты</h5>
-                <h1 class="welcome-title">Добро пожаловать</h1>
-                <p class="welcome-text">в Slow Beauty Eco Salon, салон органической красоты в Нью-Йорке</p>
-                <a href="#" class="welcome-connect">связаться с нами</a>
+    </section>
+    <section class="procedures">
+        <div class="procedures__container">
+            <div class="procedures__image">
+                <img src="images/procedures__image.jpg" class="image" alt="procedures__image">
             </div>
-            <div class="welcome-image">
-                <img src="images/welcome-image.jpg" class="test-image" alt="welcome-image">
+            <div class="procedures__text">
+                <div class="procedures__text__container">
+                    <h2 class="procedures__title">Косметические процедуры</h2>
+                    <span class="procedures__tap"></span>
+                    <p class="procedures__p">Наши высококвалифицированные терапевты обсудят ваши конкретные проблемы и
+                        индивидуализируют ваш
+                        массаж в соответствии с вашими требованиями, будь то спина, шея и плечи, шведский массаж всего
+                        тела или массаж головы и шеи.</p>
+                </div>
             </div>
-        </section>
-        <section class="gallery">
-            <div class="item">
-                <h3 class="gallery-title">Уникальное место</h3>
-                <span class="border"></span>
-                <p class="gallery-text">Integer diam quam, ultrices non lobortis ut, ultricies at libero phasellus luctus</p>
+        </div>
+    </section>
+    <section class="massages">
+        <div class="massages__text">
+            <h1 class="massages__title">Массажи</h1>
+            <span class="massages__tap"></span>
+            <p class="massages__p">Эта форма терапии включает в себя практические методы, которые помогают улучшить
+                кровообращение, снять напряжение, уменьшить стресс, уменьшить беспокойство и улучшить сон. Наши
+                высококвалифицированные терапевты обсудят ваши конкретные проблемы.</p>
+            <a href="#" class="massages__link">learn more</a>
+        </div>
+        <div class="massages__image">
+            <img src="images/massages__image.jpg" class="image" alt="massages__image">
+            <div class="massages__border"></div>
+            <div class="massages__background"></div>
+        </div>
+    </section>
+    <section class="reservation">
+        <div class="reservation__container">
+            <div class="reservation__text">
+                <h2 class="reservation__title">Зарезервировать</h2>
+                <span class="reservation__tap"></span>
+                <p class="reservation__p">Наши клиенты важны для нас, поэтому мы постоянно обучаем наших терапевтов,
+                    чтобы гарантировать, что все процедуры соответствуют высочайшим стандартам и что каждый клиент
+                    получает наилучший уход.</p>
+                <form action="#" class="reservation__form" method="post">
+                    <input type="text" name="name" id="name" placeholder="Enter your Name">
+                    <input type="email" name="email" id="email" placeholder="Enter a valid email address">
+                    <textarea name="message" id="message" cols="30" rows="6"
+                              placeholder="Enter your message"></textarea>
+                    <a href="#" class="reservation__link">РАЗМЕСТИТЬ</a>
+                </form>
             </div>
-            <div class= "item item-image"><img src="images/item-1.jpg" class="gallery-image" alt="gallery-image"></div>
-            <div class="item" style="background-color: #000000;">
-                <h3 class="gallery-title" style="color: #FFFFFF;">Уход за телом</h3>
-                <span class="border" style="background-color: #FFFFFF;"></span>
-                <p class="gallery-text" style="color: #FFFFFF;">Integer diam quam, ultrices non lobortis ut, ultricies at libero phasellus luctus</p>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__row">
+            <div class="footer__item">
+                <h6 class="footer__title">Заголовок</h6>
+                <p class="footer__p">Образец текста нижнего колонтитула</p>
             </div>
-            <div class= "item item-image"><img src="images/item-2.jpg" class="gallery-image" alt="gallery-image"></div>
-            <div class="item" style="background-color: #FFFFFF;">
-                <h3 class="gallery-title">Специальные предложения</h3>
-                <span class="border"></span>
-                <p class="gallery-text">Integer diam quam, ultrices non lobortis ut, ultricies at libero phasellus luctus</p>
+            <div class="footer__item">
+                <h6 class="footer__title">Заголовок</h6>
+                <p class="footer__p">Образец текста нижнего колонтитула</p>
             </div>
-            <div class= "item item-image"><img src="images/item-3.jpg" class="gallery-image" alt="gallery-image"></div>
-            <div class="item">
-                <h3 class="gallery-title">Салон красоты</h3>
-                <span class="border"></span>
-                <p class="gallery-text">Integer diam quam, ultrices non lobortis ut, ultricies at libero phasellus luctus</p>
+            <div class="footer__item">
+                <h6 class="footer__title">Заголовок</h6>
+                <p class="footer__p">Образец текста нижнего колонтитула</p>
             </div>
-            <div class= "item item-image"><img src="images/item-4.jpg" class="gallery-image" alt="gallery-image"></div>
-        </section>
-    </main>
+        </div>
+        <div class="footer__icons">
+            <a href="https://uk-ua.facebook.com"><img src="images/social__icons/facebook__icon.png" class="social__icon facebook" alt="facebook__icon"></a>
+            <a href="https://twitter.com/ukraine"><img src="images/social__icons/twitter__icon.png" class="social__icon" alt="twitter__icon"></a>
+            <a href="https://www.instagram.com/accounts/login/?next=/ukraine.ua/"><img src="images/social__icons/instagram__icon.png" class="social__icon" alt="instagram__icon"></a>
+            <a href="https://ua.linkedin.com"><img src="images/social__icons/linkedin__icon.png" class="social__icon" alt="linkedin__icon"></a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

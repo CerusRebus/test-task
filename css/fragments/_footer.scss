@@ -1,0 +1,165 @@
+.footer {
+  background-color: #000000;
+  &__container {
+    margin: auto;
+
+    .footer__row {
+      display: flex;
+      padding-top: 130px;
+
+      .footer__item {
+        border: 15px solid transparent;
+
+        .footer__title {
+          @include fontDancing;
+          color: $white-color !important;
+          font-size: 1.125rem;
+          margin: 10px 0 0 0;
+        }
+        .footer__p {
+          word-wrap: break-word;
+          font-weight: 400;
+          font-size: 0.875rem;
+          line-height: 1.6;
+          color: $white-color;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+  &__icons {
+    display: flex;
+
+    .social__icon {
+      width: 25px;
+      height: 25px;
+      margin-left: 10px;
+      &.facebook {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+/*Media query*/
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__container {
+      width: 1140px;
+
+      .footer__row {
+        justify-content: center;
+        .footer__item {
+          padding-right: 60px;
+
+          .footer__title {
+          }
+          .footer__p {
+          }
+        }
+      }
+    }
+    &__icons {
+      padding: 37px 0 30px 0;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    &__container {
+      width: 940px;
+
+      .footer__row {
+        .footer__item {
+          padding-right: 49px;
+
+          .footer__title {
+          }
+          .footer__p {
+          }
+        }
+      }
+    }
+    &__icons {
+      padding: 37px 0 30px 0;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer {
+
+    &__container {
+      width: 720px;
+
+      .footer__row {
+        .footer__item {
+          padding-right: 38px;
+
+          .footer__title {
+          }
+          .footer__p {
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+
+    &__container {
+      width: 540px;
+
+      .footer__row {
+        flex-flow: column nowrap;
+
+        .footer__item {
+          border-left: 0 !important;
+          border-right: 0 !important;
+          padding-right: 28px;
+
+          .footer__title {
+          }
+          .footer__p {
+          }
+        }
+      }
+    }
+    &__icons {
+      padding: 37px 0 30px 0;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .footer {
+
+    &__container {
+      width: 340px;
+
+      .footer__row {
+        .footer__item {
+          padding-right: 18px;
+
+          .footer__title {
+          }
+          .footer__p {
+          }
+        }
+      }
+    }
+    &__icons {
+      padding: 39px 0 59px 0;
+    }
+  }
+}
+
+

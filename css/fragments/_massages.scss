@@ -1,0 +1,295 @@
+.massages {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 6rem auto 0;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+
+    .massages__title {
+      @include fontDancing;
+      line-height: 1.1;
+      word-wrap: break-word;
+    }
+
+    .massages__tap {
+      @include tap;
+      margin-top: 30px;
+    }
+
+    .massages__p {
+      font-family: Roboto, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      color: $black-color;
+      word-wrap: break-word;
+      margin: 30px 0 0;
+    }
+
+    .massages__link {
+      display: inline-block;
+      color: $bgc-item;
+      line-height: 1.8;
+      margin: 42px auto 60px 0;
+    }
+  }
+
+  &__image {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .image {
+      object-fit: cover;
+      z-index: 10;
+    }
+
+    .massages__border {
+      border: 5px solid $bgc-item;
+      position: absolute;
+      left: 0;
+    }
+
+    .massages__background {
+      position: absolute;
+      background-color: $bgc-item;
+      opacity: 0.5;
+      right: 0;
+    }
+  }
+}
+
+/*Media query*/
+
+@media screen and (min-width: 1200px) {
+  .massages {
+    width: 1140px;
+
+    &__text {
+      padding: 0 43px 0 51px;
+
+      .massages__title {
+        font-size: 3.75rem;
+        margin: 60px 0 0;
+      }
+
+      .massages__tap {
+        width: 54px;
+      }
+
+      .massages__p {
+
+      }
+
+    }
+
+    &__image {
+      .image {
+        width: 525px;
+        height: 503px;
+      }
+
+      .massages__border {
+        width: 479px;
+        height: 479px;
+        top: 70px;
+      }
+
+      .massages__background {
+        height: 453px;
+        width: 462px;
+        top: 150px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .massages {
+    width: 940px;
+
+    &__text {
+      padding: 0 35px 0 42px;
+
+      .massages__title {
+        margin: 60px 0 0;
+        font-size: 3rem;
+      }
+
+      .massages__tap {
+        width: 45px;
+      }
+
+      .massages__p {
+
+      }
+
+      .massages__link {
+        margin-bottom: 47px;
+      }
+
+    }
+
+    &__image {
+      .image {
+        width: 433px;
+      }
+
+      .massages__border {
+        width: 395px;
+        height: 469px;
+        top: 60px;
+      }
+
+      .massages__background {
+        width: 381px;
+        height: 453px;
+        top: 140px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .massages {
+    width: 720px;
+
+    &__text {
+      padding: 0 27px 0 32px;
+
+      .massages__title {
+        font-size: 2.25rem;
+        margin-top: 50px;
+      }
+
+      .massages__tap {
+        width: 34px;
+      }
+
+      .massages__p {
+
+      }
+
+      .massages__link {
+        margin-bottom: 50px;
+      }
+
+    }
+
+    &__image {
+      .image {
+        width: 344px;
+        height: 356px;
+      }
+
+      .massages__border {
+        width: 302px;
+        height: 340px;
+        top: 80px;
+      }
+
+      .massages__background {
+        width: 291px;
+        height: 315px;
+        top: 170px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .massages {
+    flex-flow: column nowrap;
+    width: 540px;
+
+    &__text {
+      width: 100%;
+      padding: 0 24px 0 20px;
+
+      .massages__title {
+        font-size: 3.75rem;
+        margin-top: 55px;
+      }
+
+      .massages__tap {
+        width: 32px;
+      }
+
+      .massages__p {
+
+      }
+
+      .massages__link {
+        margin-bottom: 55px;
+      }
+
+    }
+
+    &__image {
+      width: 100%;
+
+      .image {
+        width: 446px;
+        height: 498px;
+      }
+
+      .massages__border {
+        width: 422px;
+        height: 479px;
+        top: 70px;
+      }
+
+      .massages__background {
+        width: 422px;
+        height: 453px;
+        top: 140px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .massages {
+    width: 340px;
+
+    &__text {
+      padding: 0 15px 0 13px;
+
+      .massages__title {
+        margin-top: 60px;
+      }
+
+      .massages__tap {
+        width: 27px;
+      }
+
+      .massages__p {
+
+      }
+
+    }
+
+    &__image {
+      .image {
+        width: 280px;
+        height: 390px;
+      }
+
+      .massages__border {
+        width: 238px;
+        height: 390px;
+        top: 40px;
+      }
+
+      .massages__background {
+        width: 229px;
+        height: 345px;
+        top: 120px;
+      }
+    }
+  }
+}

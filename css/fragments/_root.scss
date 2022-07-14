@@ -4,10 +4,36 @@
 body {
   margin: 0;
 }
+
 * {
   box-sizing: border-box;
 }
-$black-color: #000000;
+
+a {
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  line-height: 1.8;
+}
+
+$black-color: #111111;
 $white-color: #FFFFFF;
 $bgc-link: #f2b39a;
 $bgc-item: #fbd2c0;
+$bgc-products: #F3F1F2FF;
+
+/* Mixins */
+
+@mixin tap {
+  display: inline-block;
+  height: 3px;
+  background-color: $black-color;
+  transform-origin: left center 0;
+}
+
+@mixin fontDancing  {
+  font-family: 'Dancing Script';
+  word-wrap: break-word;
+  font-weight: 300;
+  color: $black-color;
+  line-height: 1.2;
+}
